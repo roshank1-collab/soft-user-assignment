@@ -16,7 +16,7 @@ class DashboardActivity : AppCompatActivity() {
     private lateinit var tabLayout: TabLayout;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_dashboard)
+        setContentView(R.layout.activity_dashboard)
         viewPager = findViewById(R.id.viewPager);
         tabLayout = findViewById(R.id.tabLayout);
         loadViewPagerAdapter();
@@ -40,11 +40,11 @@ class DashboardActivity : AppCompatActivity() {
 
     private fun loadlist(){
         if (lisfOfStudent.size==0){
-            lisfOfStudent.add(Student("Reshika Shrestha", "20", "Bhaktapur", "Female"));
-            lisfOfStudent.add(Student("Meezu Lawot", "20", "Kathmandu", "Female"));
-            lisfOfStudent.add(Student("Salina Shrestha", "20", "Lalitpur", "Female"));
+            lisfOfStudent.add(Student("Shankar Bhandari", "20", "Bhaktapur", "Male"));
+            lisfOfStudent.add(Student("Sujit Kushuwa", "20", "Kathmandu", "Male"));
+            lisfOfStudent.add(Student("Reeya Pandey", "27", "Lalitpur", "Male"));
             lisfOfStudent.add(Student("Ujjwal Lamichhane", "20", "Kathmandu", "Male"));
-            lisfOfStudent.add(Student("Yaman Subedi", "20", "Kathmandu", "Male"));
+            lisfOfStudent.add(Student("Deependra Khatiwada", "60", "Mandu", "Male"));
         }
     }
     companion object {
